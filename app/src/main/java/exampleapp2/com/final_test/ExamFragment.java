@@ -15,10 +15,10 @@ import android.widget.Toast;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MainFragment extends Fragment {
+public class ExamFragment extends Fragment {
 
 
-    public MainFragment() {
+    public ExamFragment() {
         // Required empty public constructor
     }
 
@@ -26,11 +26,9 @@ public class MainFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        final View mainView = (View) inflater.inflate(R.layout.fragment_exam, container, false);
 
-       final View mainView = (View) inflater.inflate(R.layout.fragment_main2, container, false);
-
-        WebView myWebView = (WebView) mainView.findViewById(R.id.mainWebView);
+        WebView myWebView = (WebView) mainView.findViewById(R.id.ExamWebView);
 
         WebSettings webSettings = myWebView.getSettings();
 
@@ -44,23 +42,9 @@ public class MainFragment extends Fragment {
             }
         });
 
-        myWebView.loadUrl("http://www.mmmut.ac.in");
+        myWebView.loadUrl("http://mmmut.ac.in/ExaminationSchedule.aspx");
 
         return mainView;
     }
 
-//    @Override
-//    public void onCreate(Bundle savedInstanceState) {
-//
-//       // getActivity().getWindow().requestFeature(Window.FEATURE_PROGRESS);
-//        super.onCreate(savedInstanceState);
-//
-//
-//
-////        final Activity activity = getActivity();
-////
-
-//
-//
-//    }
 }

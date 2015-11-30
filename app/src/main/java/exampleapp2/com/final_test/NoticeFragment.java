@@ -1,6 +1,5 @@
 package exampleapp2.com.final_test;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,25 +11,17 @@ import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class MainFragment extends Fragment {
+public class NoticeFragment extends Fragment {
 
-
-    public MainFragment() {
-        // Required empty public constructor
-    }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        final View mainView = (View) inflater.inflate(R.layout.fragment_notice, container, false);
 
-       final View mainView = (View) inflater.inflate(R.layout.fragment_main2, container, false);
-
-        WebView myWebView = (WebView) mainView.findViewById(R.id.mainWebView);
+        WebView myWebView = (WebView) mainView.findViewById(R.id.noticeWebView);
 
         WebSettings webSettings = myWebView.getSettings();
 
@@ -44,23 +35,12 @@ public class MainFragment extends Fragment {
             }
         });
 
-        myWebView.loadUrl("http://www.mmmut.ac.in");
+        myWebView.loadUrl("http://mmmut.ac.in/AllNotice.aspx");
 
         return mainView;
     }
 
-//    @Override
-//    public void onCreate(Bundle savedInstanceState) {
-//
-//       // getActivity().getWindow().requestFeature(Window.FEATURE_PROGRESS);
-//        super.onCreate(savedInstanceState);
-//
-//
-//
-////        final Activity activity = getActivity();
-////
 
-//
-//
-//    }
+
+
 }
