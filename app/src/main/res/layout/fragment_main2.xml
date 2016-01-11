@@ -4,17 +4,12 @@
     android:layout_height="match_parent"
     tools:context="exampleapp2.com.final_test.MainFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MAIN"
-        android:padding="8dp"
-        android:textColor="#fff"
-        android:background="@color/colorPrimary"
-        android:textSize="28sp"
-        android:id="@+id/textView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+
+    <WebView
+        android:id="@+id/mainWebView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        />
+
 
 </RelativeLayout>
