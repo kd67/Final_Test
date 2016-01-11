@@ -5,11 +5,15 @@
     tools:context="exampleapp2.com.final_test.AcademicsFragment">
 
     <!-- TODO: Update blank fragment layout -->
-
-    <WebView
-        android:id="@+id/acadWebView"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        />
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAIN"
+        android:padding="8dp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:textSize="28sp"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 </FrameLayout>
