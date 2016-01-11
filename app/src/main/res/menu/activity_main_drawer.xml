@@ -3,44 +3,21 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-
-            android:title="The University" />
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import" />
         <item
-            android:id="@+id/nav_academics"
-
-            android:title="Academics" />
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
         <item
-            android:id="@+id/nav_happening"
-
-            android:title="Happening's At MMMUT" />
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
         <item
-            android:id="@+id/nav_notices"
-
-            android:title="Notices" />
-
-        <item
-            android:id="@+id/nav_circular"
-
-            android:title="Circulars" />
-        <item
-            android:id="@+id/nav_tnp"
-
-            android:title="Training-Placement" />
-        <item
-            android:id="@+id/nav_exam"
-
-            android:title="Examination and Results" />
-        <item
-            android:id="@+id/nav_job"
-
-            android:title="Jobs@MMMUT" />
-        <item
-            android:id="@+id/nav_alumni"
-
-            android:title="Alumni" />
-
-
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
     </group>
 
     <item android:title="Communicate">
